@@ -4,7 +4,7 @@ public class Triangle {
     public static void main(String[] args) {
         draw(20, 10);
     }
-    private static void draw (int columns, int rows) {
+    public static void draw (int columns, int rows) {
         StringBuilder s = new StringBuilder();
         for (int i = 0; i < columns-1; i++) {
             s.append(" ");
@@ -16,4 +16,5 @@ public class Triangle {
             System.out.println(result.substring(i, columns + 2*i));
         }
     }
+
 }
